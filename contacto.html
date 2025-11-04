@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Contactos</title>
+  </head>
+  <body>
+    <!-- PEGAMOS TANTO EL FOOTER COMO EL HEADER EN LAS TRES PAGINAS, PUES AUN NO PODEMOS USAR JS NI REACT  -->
+    <header>
+      <img class="logo" src="./assets/logo.png" alt="Logo de Isaac Mendoza" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./proyectos.html">PROYECTOS</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacto">
+        <h1>CONTACTO</h1>
+        <p>
+          Contactame si deseas trabajar conmigo o escribir una reseña sobre mis
+          servicios
+        </p>
+        <form action="#" method="POST">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombres"
+            required
+          /><br /><br />
+          <input
+            type="email"
+            name="correo"
+            placeholder="Tu correo"
+            required
+          /><br /><br />
+          <input
+            type="tel"
+            name="telefono"
+            placeholder="Tu número de teléfono"
+          /><br /><br />
+          <textarea
+            name="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Fusce consectetur, leo at malesuada ornare</p>
+      <p>SOCIAL LINKS</p>
+    </footer>
+  </body>
+</html>

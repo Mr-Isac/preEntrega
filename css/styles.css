@@ -1,0 +1,168 @@
+/* ESTILOS GLOBALES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+main,
+footer {
+  min-width: 1000px;
+}
+
+.hero,
+.sobre-mi,
+.servicios-section,
+.portafolio,
+.reviews,
+.contacto {
+  padding: 150px 50px;
+  text-align: center;
+}
+/* PAGINA PRINCIPAL */
+
+/* SECCION DEL HEADER  */
+header {
+  padding: 1rem;
+  background-color: #0a111c;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: #e6eef6;
+  text-decoration: none;
+}
+
+/* SECCION PRINCIPAL */
+
+.botones {
+  margin-top: 20px;
+}
+
+.botones a {
+  background-color: #4f46e5;
+  padding: 15px;
+}
+
+/* SECCION SOBRE MI */
+.sobre-mi {
+  background-color: #0a111c;
+  color: #e6eef6;
+  display: flex;
+  justify-content: space-around;
+}
+
+.descripcion {
+  text-align: left;
+  width: 50%;
+}
+
+.descripcion h2 {
+  margin-bottom: 20px;
+}
+.photo-contenedor {
+  margin-top: 20px;
+  text-align: center;
+}
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+/* SECCION SERVICIOS */
+
+.servicio {
+  margin-top: 20px;
+}
+
+.servicio ul {
+  list-style-type: none;
+}
+
+/* SECCION FOOTER */
+footer {
+  background-color: #0a111c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+footer p {
+  padding-bottom: 5px;
+}
+
+/*  */
+/*  */
+/*  */
+
+/* PAGINA DE PROYECTOS */
+.proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.portafolio h2 {
+  margin-bottom: 3rem;
+}
+
+.portafolio img {
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  border: 2px solid;
+  margin-right: 20px;
+}
+.reviews {
+  text-align: center;
+}
+
+.reviews p {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .proyecto-4,
+  .proyecto-5,
+  .proyecto-6 {
+    display: none;
+  }
+  .proyectos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+
+/* PAGINA DE CONTACTO */
+.contacto p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form button {
+  /* background-color: #4f46e5; */
+  padding: 15px;
+}
