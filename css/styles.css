@@ -6,11 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-header,
-main,
-footer {
-  min-width: 1000px;
-}
+
 
 .hero,
 .sobre-mi,
@@ -27,12 +23,13 @@ footer {
 header {
   padding: 1rem;
   background-color: #0a111c;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
 
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
 .logo {
   width: 100px;
 }
@@ -46,6 +43,15 @@ nav ul {
 a {
   color: #e6eef6;
   text-decoration: none;
+}
+
+@media (max-width: 800px){
+header{
+  flex-direction: column;
+}
+nav{
+  margin-top: 1rem ;
+}
 }
 
 /* SECCION PRINCIPAL */
@@ -64,8 +70,10 @@ a {
   background-color: #0a111c;
   color: #e6eef6;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
+
 
 .descripcion {
   text-align: left;
@@ -85,6 +93,17 @@ a {
   border-radius: 15px;
 }
 
+@media (max-width: 800px){
+  .sobre-mi{
+    flex-direction: column-reverse;
+    
+  }
+  .descripcion{
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
 /* SECCION SERVICIOS */
 
 .servicio {
