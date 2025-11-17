@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'sobre-mi';
+@import 'servicios';
+@import 'proyectos';
+@import 'contacto';
+
+/* ESTILOS GLOBALES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg;
+}
+
+/* SECCIONES GENERALES */
+.hero,
+.sobre-mi,
+.servicios-section,
+.portafolio,
+.reviews,
+.contacto {
+  padding: $padding-section;
+  text-align: center;
+}
+
+/* HOVER BOTONES */
+.botones {
+  margin-top: 20px;
+  @include flex-center(row, 3rem);
+
+  a {
+    background-color: $primary-color;
+    padding: 15px;
+    color: $white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: $header-bg;
+  color: $white;
+  text-align: center;
+  padding: 2rem 1rem 0.5rem 1rem;
+
+  p {
+    padding-bottom: 5px;
+  }
+}

@@ -1,0 +1,33 @@
+.servicios {
+  margin-top: 3rem;
+  @include flex-center(row, 3rem);
+
+  .servicio {
+    width: 30%;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: $white;
+
+    ul {
+      margin-top: 2rem;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .servicio {
+      width: 20%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    .servicio {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+}
