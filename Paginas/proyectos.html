@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Proyectos | Portafolio de Isaac Mendoza</title>
+
+    <meta
+      name="description"
+      content="Proyectos que hice en HTML, CSS, JavaScript y React. Algunas apps y landing pages."
+    />
+    <meta
+      name="keywords"
+      content="proyectos web, portfolio, desarrollador web, front-end, full stack, aplicaciones web"
+    />
+    <meta name="author" content="Isaac Mendoza" />
+    <link
+      rel="canonical"
+      href="https://mr-isac.github.io/preEntrega/Paginas/proyectos.html"
+    />
+
     <!-- Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="../css/scss/main.css" />
-    <title>Proyectos</title>
   </head>
+
   <body>
-    <!-- PEGAMOS TANTO EL FOOTER COMO EL HEADER EN LAS TRES PAGINAS, PUES AUN NO PODEMOS USAR JS NI REACT  -->
+    <!-- HEADER -->
     <header
       class="navbar navbar-dark d-flex justify-content-between align-items-center px-3 py-2"
     >
-      <!-- Logo -->
       <a href="../index.html">
         <img
           class="logo"
@@ -25,8 +41,6 @@
           alt="Logo de Isaac Mendoza"
         />
       </a>
-
-      <!-- Botón hamburguesa (visible hasta tablet) -->
       <button
         class="navbar-toggler d-lg-none custom-toggler"
         type="button"
@@ -38,8 +52,6 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Menú -->
       <nav class="collapse d-lg-block" id="menu">
         <ul class="d-flex flex-column flex-lg-row mb-0">
           <li><a href="../index.html">HOME</a></li>
@@ -48,61 +60,67 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <!-- PROYECTOS QUE HE REALIZADO -->
+      <!-- PROYECTOS -->
       <section class="portafolio">
         <h1>DESARROLLO WEB</h1>
         <h2>FRONT-END, BACK-END, FULL-STACK</h2>
+
         <div class="proyectos">
           <img
             class="proyecto-1"
             src="../assets/gallery.png"
-            alt="foto de proyecto de galeria"
+            alt="Proyecto galería de imágenes desarrollado por Isaac Mendoza"
           />
           <img
             class="proyecto-2"
             src="../assets/clock-app.png"
-            alt="foto de proyecto clock-app"
+            alt="Proyecto aplicación reloj digital creado por Isaac Mendoza"
           />
           <img
             class="proyecto-3"
             src="../assets/quiz.png"
-            alt="foto de proyeto de quiz"
+            alt="Proyecto juego de Quiz interactivo desarrollado por Isaac Mendoza"
           />
           <img
             class="proyecto-4"
             src="../assets/landing-page.png"
-            alt="foto de proyecto de landing-page"
-          /><img
+            alt="Proyecto landing page responsiva diseñada por Isaac Mendoza"
+          />
+          <img
             class="proyecto-5"
             src="../assets/password-generator.png"
-            alt="foto de proyecto de password-generator"
-          /><img
+            alt="Proyecto generador de contraseñas web creado por Isaac Mendoza"
+          />
+          <img
             class="proyecto-6"
             src="../assets/membership-page.png"
-            alt="foto de proyecto de membership-page"
+            alt="Proyecto membership page para usuarios premium"
           />
         </div>
       </section>
-      <!-- ALGUNAS REVIEWS DE PERSONAS QUE HAN SOLICITADO MIS SERVICIOS -->
+
+      <!-- REVIEWS -->
       <section class="reviews">
         <h3>REVIEWS</h3>
-
         <p>
           “Isaac tiene un gran talento para el desarrollo web. Entrega sus
           proyectos a tiempo, con código limpio y soluciones claras. Muy
           recomendable para cualquier proyecto web.” — Juan Pérez, profesor de
-          desarrollo web
+          desarrollo web.
         </p>
       </section>
     </main>
+
     <footer>
       <p>
         Desarrollador web en formación, creando proyectos limpios y funcionales.
       </p>
       <p>Todos los derechos reservados © 2025 Desarrollo por Isaac</p>
     </footer>
-    <!-- Bootstrap  -->
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

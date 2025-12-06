@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Isaac Mendoza | Desarrollador Web Full Stack</title>
+
+    <meta
+      name="description"
+      content="Portafolio de Isaac Mendoza, desarrollador web. Aquí muestro mis proyectos y habilidades en HTML, CSS, JavaScript y React."
+    />
+    <meta
+      name="keywords"
+      content="desarrollador web, full stack, portfolio, proyectos web, HTML, CSS, JavaScript, React"
+    />
+    <meta name="author" content="Isaac Mendoza" />
+    <link
+      rel="canonical"
+      href="https://mr-isac.github.io/preEntrega/index.html"
+    />
+
     <!-- Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/scss/main.css" />
-    <title>PreEntrega3MENDOZA</title>
   </head>
+
   <body>
-    <!-- PEGAMOS TANTO EL FOOTER COMO EL HEADER EN LAS TRES PAGINAS, PUES AUN NO PODEMOS USAR JS NI REACT  -->
-    <!-- Botón hamburguesa (solo visible en pantallas pequeñas) -->
+    <!-- HEADER -->
     <header
       class="navbar navbar-dark d-flex justify-content-between align-items-center px-3 py-2"
     >
-      <!-- Logo -->
       <a href="./index.html">
         <img class="logo" src="./assets/logo.png" alt="Logo de Isaac Mendoza" />
       </a>
-
-      <!-- Botón hamburguesa (visible hasta tablet) -->
       <button
         class="navbar-toggler d-lg-none custom-toggler"
         type="button"
@@ -35,8 +48,6 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Menú -->
       <nav class="collapse d-lg-block" id="menu">
         <ul class="d-flex flex-column flex-lg-row mb-0">
           <li><a href="./index.html">HOME</a></li>
@@ -47,7 +58,7 @@
     </header>
 
     <main>
-      <!-- ESTA ES LA SECCION PRINCIPAL DE ESTA PAGINA-->
+      <!-- HERO -->
       <section class="hero">
         <h1>
           HOLA! <br />
@@ -58,7 +69,8 @@
           <a href="./Paginas/contacto.html">CONTACTO</a>
         </div>
       </section>
-      <!-- SECCION CON MI DESCRIPCION Y FOTO PERSONAL -->
+
+      <!-- SOBRE MI -->
       <section class="sobre-mi">
         <div class="descripcion">
           <h2>SOBRE MI</h2>
@@ -74,11 +86,12 @@
           <img
             class="photo"
             src="./assets/photo.jpg"
-            alt="foto de isaac mendoza"
+            alt="Foto de Isaac Mendoza, desarrollador web"
           />
         </div>
       </section>
-      <!-- SECCION DONDE PRESENTO MIS SERVICIOS -->
+
+      <!-- SERVICIOS -->
       <section class="servicios-section">
         <h2>SERVICIOS</h2>
         <div class="servicios">
@@ -91,10 +104,7 @@
             </ul>
           </div>
           <div class="servicio">
-            <h3>
-              DISEÑO<br />
-              WEB
-            </h3>
+            <h3>DISEÑO WEB</h3>
             <ul>
               <li>Responsive Design</li>
               <li>Accesibility</li>
@@ -104,13 +114,15 @@
         </div>
       </section>
     </main>
-    <!-- FOOTER DONDE AÑADO UNA PEQUEÑA DESCRIPCION Y LOS LINKS A MIS REDES -->
+
+    <!-- FOOTER -->
     <footer>
       <p>
         Desarrollador web en formación, creando proyectos limpios y funcionales.
       </p>
       <p>Todos los derechos reservados © 2025 Desarrollo por Isaac</p>
     </footer>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
